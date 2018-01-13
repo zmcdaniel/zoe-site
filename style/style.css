@@ -11,6 +11,16 @@
     font-weight: 900;
 }
 
+.rarr {
+    color: #f00;
+}
+
+.squig {
+    color: deepskyblue;
+    padding-left: 10%;
+    weight: 800px;
+}
+
 .right {
     width: 80%;
     display: inline-block;
@@ -21,20 +31,20 @@ body {
     font-size: 3vw;
     font-family: monospace;
     margin-top: 3%;
-    color: #e1e1e1;
+    color: #2cd917;
     font-size: 2vw;
     letter-spacing: 2px;
     line-height: 50px;
 }
 
 a {
-    color: #e1e1e1;
+    color: #2cd917;
 }
 
 .blinking-cursor {
     font-weight: 100;
     font-size: 30px;
-    color: #2E3D48;
+    color: #2cd917;
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;
     -ms-animation: 1s blink step-end infinite;
@@ -47,7 +57,7 @@ a {
         color: transparent;
     }
     50% {
-        color: #e1e1e1;
+        color: #2cd917;
     }
 }
 
@@ -56,7 +66,7 @@ a {
         color: transparent;
     }
     50% {
-        color: #e1e1e1;
+        color: #2cd917;
     }
 }
 
@@ -65,7 +75,7 @@ a {
         color: transparent;
     }
     50% {
-        color: #e1e1e1;
+        color: #2cd917;
     }
 }
 
@@ -74,7 +84,7 @@ a {
         color: transparent;
     }
     50% {
-        color: #e1e1e1;
+        color: #2cd917;
     }
 }
 
@@ -83,6 +93,6 @@ a {
         color: transparent;
     }
     50% {
-        color: #e1e1e1;
+        color: #2cd917;
     }
 }
