@@ -1,5 +1,5 @@
 .row {
-    width: 80%;
+    width: 90%;
     display: block;
 }
 
@@ -28,8 +28,7 @@
 
 body {
     background-color: #1d1d1d;
-    font-size: 3vw;
-    font-family: monospace;
+    font-family: 'Ubunto Mono', monospace;
     margin-top: 3%;
     color: #2cd917;
     font-size: 2vw;
@@ -37,8 +36,24 @@ body {
     line-height: 50px;
 }
 
+.intro-text {
+    margin: 2em 0;
+}
+
 a {
     color: #2cd917;
+}
+
+.button {
+    background-color: #2cd917;
+    color: #1d1d1d;
+    padding: 2px 5px;
+    border: 2px solid #1d1d1d;
+    font-family: monospace;
+}
+
+.button:hover {
+    border: 2px solid #1d1d1d;
 }
 
 .blinking-cursor {
