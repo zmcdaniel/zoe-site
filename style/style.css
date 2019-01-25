@@ -1,121 +1,221 @@
-.row {
-    width: 90%;
-    display: block;
+html {
+    background-color: #fefefe;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #454545;
 }
 
-.left {
-    vertical-align: top;
-    width: 10%;
-    margin-left: 1%;
-    display: inline-block;
-    font-weight: 900;
+.content {
+    font-size: 16px;
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 1em;
+    line-height: 1.4;
+    text-align: justify
 }
 
-.rarr {
-    color: #f00;
+/*html.leet .overlay {*/
+    /*pointer-events: none;*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background:*/
+            /*repeating-linear-gradient(*/
+                    /*180deg,*/
+                    /*rgba(0, 0, 0, 0) 0,*/
+                    /*rgba(0, 0, 0, 0.3) 50%,*/
+                    /*rgba(0, 0, 0, 0) 100%);*/
+    /*background-size: auto 4px;*/
+    /*z-index: 99;*/
+/*}*/
+
+/*html.leet .overlay::before {*/
+    /*content: "";*/
+    /*pointer-events: none;*/
+    /*position: absolute;*/
+    /*display: inline;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-image: linear-gradient(*/
+            /*0deg,*/
+            /*transparent 0%,*/
+            /*rgba(32, 128, 32, 0.2) 2%,*/
+            /*rgba(32, 128, 32, 0.8) 3%,*/
+            /*rgba(32, 128, 32, 0.2) 3%,*/
+            /*transparent 100%);*/
+    /*background-repeat: no-repeat;*/
+    /*animation: scan 7.5s linear 0s infinite;*/
+/*}*/
+
+/*@keyframes scan {*/
+    /*0%        { background-position: 0 -100vh; }*/
+    /*35%, 100% { background-position: 0 100vh; }*/
+/*}*/
+
+html.leet {
+    font-family: "Ubuntu Mono", monospace !important;
+    background-color: #000000;
+    background-image: radial-gradient(#11581E, #041607);
+    color: rgba(128, 255, 128, 0.8);
+    text-shadow:
+            0 0 1px rgba(51, 255, 51, 1),
+            0 0 2px rgba(255, 255, 255, 0.8);
 }
 
-.squig {
-    color: deepskyblue;
-    padding-left: 10%;
-    weight: 800px;
+html.leet img {
+    background-color: green;
+    color: green;
+    opacity: 0.5;
 }
 
-.right {
-    width: 80%;
-    display: inline-block;
+html.leet p {
+    color: rgba(128, 255, 128, 0.8);
+    text-shadow:
+            0 0 1px rgba(51, 255, 51, 0.4),
+            0 0 2px rgba(255, 255, 255, 0.8);
 }
 
-body {
-    background-color: #1d1d1d;
-    font-family: 'Ubunto Mono', monospace;
-    margin-top: 3%;
-    color: #2cd917;
-    font-size: 2vw;
-    letter-spacing: 2px;
-    line-height: 50px;
+html.leet a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.intro-text {
-    margin: 2em 0;
+html.leet a::before {
+    content: "[";
+}
+
+html.leet a::after {
+    content: "]";
+}
+
+html.inverted {
+    background-color: #010101
+}
+
+html.inverted body {
+    color: #bababa
+}
+
+html.inverted div#contrast,
+html.inverted div#invmode {
+    color: #fff;
+    background-color: #000
+}
+
+html.inverted a {
+    color: #07a
+}
+
+html.inverted a:visited {
+    color: #ac5a82
+}
+
+html.inverted {
+    background-color: #010101
+}
+
+html.inverted body {
+    color: #fff
+}
+
+html.inverted div#contrast,
+html.inverted div#invmode {
+    color: #fff;
+    background-color: #000
+}
+
+html.inverted a {
+    color: #07a
+}
+
+html.inverted a:visited {
+    color: #ac5a82
 }
 
 a {
-    color: #2cd917;
+    color: #07a
 }
 
-.button {
-    background-color: #2cd917;
-    color: #1d1d1d;
+a:visited {
+    color: #941352
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+div.fancyPositioning div.picture-left {
+    float: left;
+    width: 40%;
+    overflow: hidden;
+    margin-right: 1em
+}
+
+div.fancyPositioning div.picture-left img {
+    width: 100%
+}
+
+div.fancyPositioning div.picture-left p.caption {
+    font-size: .7em
+}
+
+div.fancyPositioning div.tleft {
+    float: left;
+    width: 55%
+}
+
+div.fancyPositioning div.tleft p:first-child {
+    margin-top: 0
+}
+
+div.fancyPositioning:after {
+    display: block;
+    content: "";
+    clear: both
+}
+
+@media screen and (max-width:500px) {
+    body {
+        text-align: left
+    }
+    div.fancyPositioning div.picture-left,
+    div.fancyPositioning div.tleft {
+        float: none;
+        width: inherit
+    }
+}
+
+div#leetmode {
+    color: #33ff00;
+    background-color: #000;
+    top: 10px;
     padding: 2px 5px;
-    border: 2px solid #1d1d1d;
-    font-family: monospace;
 }
 
-.button:hover {
-    border: 2px solid #1d1d1d;
+div#leetmode,
+div#invmode {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    font-size: .8em;
+    text-decoration: underline;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
 }
 
-.button a {
-    color: #000;
-}
-
-.button a:hover {
-    color: #1d1d1d;
-}
-
-.blinking-cursor {
-    font-weight: 100;
-    font-size: 30px;
-    color: #2cd917;
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
-}
-
-@keyframes "blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: #2cd917;
-    }
-}
-
-@-moz-keyframes blink {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: #2cd917;
-    }
-}
-
-@-webkit-keyframes "blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: #2cd917;
-    }
-}
-
-@-ms-keyframes "blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: #2cd917;
-    }
-}
-
-@-o-keyframes "blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: #2cd917;
-    }
+div#invmode {
+    color: #fff;
+    background-color: #000;
+    top: 34px;
+    padding: 2px 5px
 }

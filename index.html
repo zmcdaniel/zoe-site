@@ -1,71 +1,86 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#ffffff">
     <title>Zoe McDaniel</title>
-
-    <meta name="desciption" content="Zoe McDaniel is a front-end web developer, design technologist, and digital producer. This is Zoe's portfolio.">
-    <meta name=viewport" content="width=devicewidth, initial-scale=1">
-    <link href="style/style.css" rel="stylesheet">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112390760-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-112390760-1');
-    </script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zoe McDaniel is a developer">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
-
 </head>
 
-<div class="row">
-    <div class="left">
-        <span class="rarr">	&#10140;</span><span class="squig">&#126;</span>
-    </div>
-    <div class="right" style="margin-top: -10px;">
-        cat index.html <br />
-    </div>
-</div>
-
 <body>
-<div class="row">
-    <div class="left">
-        <span class="rarr">	&#10140;</span><span class="squig">&#126;</span>
+<div class="overlay"></div>
+<div class="content">
+<h1>Hello, I'm Zoe McDaniel</h1>
+<p class="st">You've found my personal website</p>
+<h2>About Zoe</h2>
+<div class="fancyPositioning">
+    <div class="picture-left"><img src="img/zoe.jpg" title="Zoe McDaniel">
+        <p class="caption">This is me!</p>
     </div>
-    <div class="right" style="margin-top: -10px;">
-        cat zoe-mcdaniel-introduction.html >> index.html <br />
+    <div class="tleft">
+        <p>I am a Seattle-area developer passionate about building thoughtful interactions between people and technology.</p>
+        <p>As a front-end developer, design technologist, and experiential digital producer, I have experience at agencies, corporations, and startups where I partnered with a broad range of names including Microsoft, eBay, USAA, HBO, and Amazon.</p>
+        <p>I love to turn complex data into seamless, delightful user experiences. I facilitate end to end product development, collaborating with designers, developers, producers, and stakeholders to deliver products on time, on budget, and exceeding expectations. Both technically deep and business savvy, I can interface with and impact all levels and disciplines within an organization</p>
     </div>
 </div>
 
-<div class="row intro-text">
-    Hi! You've found Zoe McDaniel's page!
+<h2>Highlighted Projects</h2>
+<ul>
+    <li>Amazon logistics "dummy" packages</li>
+    <li>theBlock online ordering platform</li>
+    <li>Microsoft Ready</li>
+    <li>Microsoft Tech Summit</li>
+    <li>eBay Main Street in a Box</li>
+    <li>Publicis Experiences</li>
+</ul>
+
+<h2>Experience</h2>
+<p>Professional Experience</p>
+<ul>
+    <li>Amazon</li>
+    <li>Publicis Experiences</li>
+    <li>General Assembly</li>
+    <li>Consulting</li>
+    <li>Various restaurants</li>
+</ul>
+<p>Volunteering and Organizations</p>
+<ul>
+    <li>Amazon Women in Security</li>
+    <li>Publicis VivaWomen!</li>
+    <li>Alliance for Pioneer Square</li>
+    <li>Every Child Counts Special Education Centre</li>
+</ul>
+
+<h2>Resume and Links</h2>
+    <ul>
+        <li>Resume .PDF - <a href="files/ZoeMcDanielResume.pdf" target="_blank">download</a></li>
+        <li>LinkedIn - <a href="linkedin.com/in/zoemcdaniel" target="_blank">in/zoemcdaniel</a></li>
+        <li>GitHub - <a href="github.com/zmcdaniel" target="_blank">zmcdaniel</a></li>
+        <li>Email - <a href="mailto:zmcdaniel@gmail.com" target="_blank">zmcdaniel@gmail.com</a></li>
+    </ul>
+
+<h2>Posts</h2>
+<p>Stuff goes here</p>
+
+<div id="invmode">Dark mode</div>
+<div id="leetmode">Leet mode</div>
 </div>
-
-<div class="row intro-text">
-        Email - <a href="mailto:zmcdaniel@gmail.com" target="_blank">zmcdaniel@gmail.com</a><br />
-        Github - <a href="https://www.github.com/zmcdaniel" target="_blank">/zmcdaniel</a><br />
-        LinkedIn - <a href="https://www.linkedin.com/in/zoe-mcdaniel/" target="_blank">/zoe-mcdaniel</a>
-</div>
-
-<div class="row intro-text">
-        Zoe wears many hats, but loves the web realm. She lives in Seattle, Washington. Previously, Zoe was a Digital Producer at <a href="http://www.publicisxp.com/" target="_blank">Publicis Experiences</a>, followed by a Support Engineer for Logistics and Loss Prevention at <a href="http://amazon.com" target="_blank">Amazon</a>. Today, she is a Front-end Developer for <a href="https://shieldbanking.com" target="_blank">Shield Compliance</a>, a cannabis banking, security, and compliance platform.
-</div>
-
-<div class="button resume">
-    <a href="ZoeMcDanielResume.pdf">
-        view resume.pdf
-    </a>
-</div>
-
-<div class="row intro-text">
-        In addition to Amazon, Zoe has worked with names like Microsoft, eBay, HBO, and USAA. Outside of her job she enjoys skiing, video games, and bourbon+meat.<span class="blinking-cursor">|</span>
-</div>
-
-
-
+<script>
+    var scriptSrc = [
+        "js/main.js"
+    ];
+    for (var i = 0; i < scriptSrc.length; i++) {
+        var index = scriptSrc[i];
+        var script = document.body.appendChild(document.createElement('script'));
+        script.async = false;
+        script.src = index;
+    }
+</script>
 </body>
 
 </html>
